@@ -1,4 +1,11 @@
 
+
+<?php
+include("conexion.php");
+$usuario = "SELECT * FROM apoderados"
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +14,11 @@
 	<title>Validación de Formulario con Javascript</title>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 	<main>
-		<form action="" class="formulario" id="formulario">
+		<form action="validador.php" class="formulario" id="formulario" method = "post">
 			<!-- Grupo: Usuario -->
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Usuario</label>
@@ -62,3 +69,10 @@
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<script type ="java/javascript">
+
+
+
+</script>

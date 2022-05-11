@@ -7,6 +7,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   
+
+  
 <script type="text/javascript" src="a.js"></script>
 <LINK REL=StyleSheet HREF="css/estilo.css" TYPE="text/css" MEDIA=screen>
 
@@ -51,12 +53,6 @@
   <input type="text" class="form-control" name="data[Arut]" id="Arut" placeholder="Rut de apoderado">
 </div>
 <div class="form-group">
-  <label for="Acorreo">Correo</label>
-  <input type="text" class="form-control" name="data[Acorreo]" id="Acorreo" placeholder="Correo">
-</div>
-
-
-<div class="form-group">
   <label for="Edad">Fecha de nacimiento</label>
   <input type="date" class="form-control" name="data[Fedad]" id="Fedad" placeholder="Fecha de nacimiento">
 </div>
@@ -69,16 +65,16 @@
 </div>
 <div class="form-group">
   <label for="address">Direccion</label>
-  <textarea  class="form-control" name="data[address]" placeholder="Direccion"></textarea>
+  <textarea  class="form-control" name="data[address]" id = "dire"placeholder="Direccion"></textarea>
 </div>
 <div class="form-group">
   <label for="mob">Comuna</label >
-  <input type="text" class="form-control" id="mob" name="data[comu]" placeholder="Comuna">
+  <input type="text" class="form-control" id="com" name="data[comu]" placeholder="Comuna">
   </div>
 
 
   <input type="button" name="previous" class="previous btn btn-default" value="cancelar" />
-  <input type="submit" name="submit" class="submit btn btn-success" value="Enviar" id="submit_data" />
+  <input type="button" name="submit" class="submit btn btn-success" value="Registrar" id="RegistrarNuevo" />
 
   
 </form>
@@ -88,6 +84,18 @@
 </body>
 </html>
 <script type="text/javascript">
+
+
+    
+
+
+
+
+
+
+
+
+
 $(document).ready(function(){
 	var current = 1,current_step,next_step,steps;
 	steps = $("fieldset").length;
@@ -114,5 +122,35 @@ $(document).ready(function(){
 			.css("width",percent+"%")
 			.html(percent+"%");		
 	}
+
+$('#RegistrarNuevo').click(function(){
+    
+      if($('#email').val()==""){
+			
+			}else if($('#password').val()==""){
+				
+			}else if($('#lName').val()==""){
+				
+			}else if($('#fName').val()==""){
+			
+			}else if($('#Arut').val()==""){
+				
+			}else if($('#Fedad').val()==""){
+				
+			}else if($('#mob').val()==""){
+				
+			}else if($('#dire').val()==""){
+			
+			}else if($('#com').val()==""){
+				
+			}
+
+
+      
+
+    });
+
+
+
 });
 </script>
