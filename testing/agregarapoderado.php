@@ -33,7 +33,7 @@ body {
   <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 
-<form id="regiration_form" novalidate action="Login.php"  method="post">
+<form id="regiration_form" novalidate action="action.php"  method="post">
 
 <fieldset>
   <h2>Paso 1: Crear su cuenta</h2>

@@ -27,7 +27,7 @@ body {
 		<div class="register-info-box">
 			<h2>No teienes cuanta?</h2>
 			<p>Registrate</p>
-			<a href= "http://localhost/pruebas/pruebas02/testing/INDEX.php" id="label-login" for="log-login-show">Registrar</a>
+			<a href= "http://localhost/pruebas/pruebas02/testing/agregarapoderado.php" id="label-login" for="log-login-show">Registrar</a>
 			<input type="radio" name="active-log-panel" id="log-login-show">
 		</div>
 							
