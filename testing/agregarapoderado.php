@@ -5,24 +5,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <LINK REL=StyleSheet HREF="visual.css" TYPE="text/css" MEDIA=screen>
+
+  
 <script type="text/javascript" src="a.js"></script>
-  <style type="text/css">
-
-
-	#regiration_form fieldset:not(:first-of-type) {
-		display: none;
-	}
-
-
-body {
-  background-image: url("https://st3.depositphotos.com/1017986/12848/i/950/depositphotos_128485498-stock-photo-school-classroom-with-desks.jpg");
-}
-
-
-
-
-  </style>
+<LINK REL=StyleSheet HREF="css/estilo.css" TYPE="text/css" MEDIA=screen>
 
   
 </head>
@@ -33,9 +19,10 @@ body {
   <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 
+
 <form id="regiration_form" novalidate action="action.php"  method="post">
 
-<fieldset>
+
   <h2>Paso 1: Crear su cuenta</h2>
   <div class="form-group">
   <label for="email">Email</label>
@@ -50,9 +37,6 @@ body {
   <input type="password" class="form-control"  placeholder="Password">
 </div>
 
-  <input type="button" name="data[password]" class="next btn btn-info" value="Siguiente" />
-</fieldset>
-<fieldset>
   <h2> Paso 2: Agregar detalles personales</h2>
   <div class="form-group">
   <label for="fName">Nombres</label>
@@ -77,13 +61,6 @@ body {
   <input type="date" class="form-control" name="data[Fedad]" id="Fedad" placeholder="Fecha de nacimiento">
 </div>
 
-  <input type="button" name="previous" class="previous btn btn-default" value="Previo" />
-  <input type="button" name="next" class="next btn btn-info" value="Siguiente" />
-
-
-
-</fieldset>
-<fieldset>
   
   <h2>Paso 3: Información de contacto</h2>
   <div class="form-group">
@@ -100,15 +77,13 @@ body {
   </div>
 
 
-  <input type="button" name="previous" class="previous btn btn-default" value="Previo" />
+  <input type="button" name="previous" class="previous btn btn-default" value="cancelar" />
   <input type="submit" name="submit" class="submit btn btn-success" value="Enviar" id="submit_data" />
 
   
-
-
-
-</fieldset>
 </form>
+
+
 </div>
 </body>
 </html>
