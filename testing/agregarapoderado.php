@@ -8,8 +8,6 @@
 
   
 
-  
-<script type="text/javascript" src="a.js"></script>
 <LINK REL=StyleSheet HREF="css/estilo.css" TYPE="text/css" MEDIA=screen>
 
   
@@ -22,7 +20,7 @@
 </div>
 
 
-<form id="regiration_form" novalidate action="action.php"  method="post">
+<form id="regiration_form"  action="agregar.php"  method="post">
 
 
   <h2>Paso 1: Crear su cuenta</h2>
@@ -74,7 +72,7 @@
 
 
   <input type="button" name="previous" class="previous btn btn-default" value="cancelar" />
-  <input type="button" name="submit" class="submit btn btn-success" value="Registrar" id="RegistrarNuevo" />
+  <input type="submit"  class="submit btn btn-success" value="Registrar" />
 
   
 </form>
@@ -83,74 +81,4 @@
 </div>
 </body>
 </html>
-<script type="text/javascript">
 
-
-    
-
-
-
-
-
-
-
-
-
-$(document).ready(function(){
-	var current = 1,current_step,next_step,steps;
-	steps = $("fieldset").length;
-	$(".next").click(function(){
-		current_step = $(this).parent();
-		next_step = $(this).parent().next();
-		next_step.show();
-		current_step.hide();
-		setProgressBar(++current);
-	});
-	$(".previous").click(function(){
-		current_step = $(this).parent();
-		next_step = $(this).parent().prev();
-		next_step.show();
-		current_step.hide();
-		setProgressBar(--current);
-	});
-	setProgressBar(current);
-	// Change progress bar action
-	function setProgressBar(curStep){
-		var percent = parseFloat(100 / steps) * curStep;
-		percent = percent.toFixed();
-		$(".progress-bar")
-			.css("width",percent+"%")
-			.html(percent+"%");		
-	}
-
-$('#RegistrarNuevo').click(function(){
-    
-      if($('#email').val()==""){
-			
-			}else if($('#password').val()==""){
-				
-			}else if($('#lName').val()==""){
-				
-			}else if($('#fName').val()==""){
-			
-			}else if($('#Arut').val()==""){
-				
-			}else if($('#Fedad').val()==""){
-				
-			}else if($('#mob').val()==""){
-				
-			}else if($('#dire').val()==""){
-			
-			}else if($('#com').val()==""){
-				
-			}
-
-
-      
-
-    });
-
-
-
-});
-</script>
