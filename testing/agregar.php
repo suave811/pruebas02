@@ -9,12 +9,20 @@ if ($mysqli->connect_errno) {
 }
 
 
-$nombre = $_POST['data[email]'];
-console.log($nombre);
+$nombre = $_POST['data'];
+$nombre = $_POST['data'];
+$nombre = $_POST['data'];
+$nombre = $_POST['data'];
+$nombre = $_POST['data'];
+$nombre = $_POST['data'];
 
-$insertar = "INSERT INTO pruevadb  VALUES ($nombre)";
 
-$query = mysqli_query($mysqli, $insertar );
+echo $nombre;
+
+
+$insertar = "INSERT INTO pruevadb  VALUES ('$nombre')";
+
+$query = mysqli_query($mysqli, $insertar);
 
 
 if($query){
